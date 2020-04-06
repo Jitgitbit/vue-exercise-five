@@ -34,7 +34,7 @@ export default {
     }
   },
   created(){
-    let ref = db.collection('messages')
+    let ref = db.collection('messages').orderBy('timestamp')
 
     ref.onSnapshot(snapshot => {
       console.log(snapshot.docChanges())
