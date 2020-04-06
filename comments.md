@@ -29,3 +29,5 @@ npm install firebase --save
 npm run dev
 
 npm install moment --save
+
+npm install vue-chat-scroll --save
