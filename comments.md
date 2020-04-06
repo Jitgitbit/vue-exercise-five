@@ -31,3 +31,8 @@ npm run dev
 npm install moment --save
 
 npm install vue-chat-scroll --save
+
+firebase login
+firebase init
+
+npm run build
