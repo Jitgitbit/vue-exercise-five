@@ -27,3 +27,5 @@ npm install firebase --save
 </script>
 
 npm run dev
+
+npm install moment --save
