@@ -1,6 +1,6 @@
 <template>
   <div class="chat container">
-    <h2 class="center teal-text">Phoenix Chat</h2>
+    <h2 class="center teal-text">Phoenix Anonymous Chat</h2>
     <div class="card">
       <div class="card-content">
         <ul class="messages" v-chat-scroll>
@@ -58,7 +58,7 @@ export default {
 <style>
 .chat h2{
   font-size: 2.6em;
-  margin-bottom: 140px;
+  margin-bottom: 30px;
 }
 .chat span{
   font-size: 1.4em;
@@ -68,7 +68,7 @@ export default {
   font-size: 0.7em;
 }
 .messages{
-  max-height: 300px;
+  max-height: 400px;
   overflow: auto;
 }
 .messages::-webkit-scrollbar{
