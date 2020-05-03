@@ -8,6 +8,7 @@
           <input type="text" name='name' v-model='name'>
           <p class="red-text" v-if="feedback">{{feedback}}</p>
           <button class="btn teal">Enter Chat</button>
+          <button class="btn teal" @click="logout">Logout</button>
         </form>
       </div>
     </div>
@@ -15,6 +16,8 @@
 </template>
 
 <script>
+import firebase from 'firebase'
+
 export default {
   name: 'Welcome',
   data () {
@@ -31,6 +34,12 @@ export default {
       }else{
         this.feedback = 'You must enter a name to join chat'
       }
+    },
+    logout(){
+      firebase.auth().signOut().then(() => {
+        this.$router.push({name: 'Login'})
+        console.log(`=========>> USER LOGGED OUT`)
+      })
     }
   }
 }
