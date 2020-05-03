@@ -14,14 +14,11 @@
       <div class="card-action">
         <NewMessage :name='name'/>
       </div>
-      <button class="btn teal" @click="changeAlias">Change alias</button>
-      <button class="btn teal" @click="logout">Logout</button>
     </div>
   </div>
 </template>
 
 <script>
-import firebase from 'firebase'
 import NewMessage from '@/components/NewMessage'
 import db from '@/firebase/init'
 import moment from 'moment'
@@ -54,11 +51,6 @@ export default {
         }
       })
     })
-  },
-  methods:{
-    changeAlias(){
-      this.$router.push({name: 'Welcome'})
-    }
   }
 }
 </script>
@@ -66,7 +58,7 @@ export default {
 <style>
 .chat h2{
   font-size: 2.6em;
-  margin-bottom: 40px;
+  margin-bottom: 140px;
 }
 .chat span{
   font-size: 1.4em;
