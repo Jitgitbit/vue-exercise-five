@@ -4,7 +4,7 @@
       <div class="card-content center-align">
         <h2 class="teal-text">Welcome</h2>
         <form @submit.prevent="enterChat">
-          <label for="name">Enter your name:</label>
+          <label for="name">Enter any name or alias you want, within this chat you have the option of remaining anonymous:</label>
           <input type="text" name='name' v-model='name'>
           <p class="red-text" v-if="feedback">{{feedback}}</p>
           <button class="btn teal">Enter Chat</button>

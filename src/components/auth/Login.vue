@@ -1,7 +1,7 @@
 <template>
   <div class="login container">
     <form class="card-panel" @submit.prevent="login">
-      <h2 class="center deep-purple-text">Login</h2>
+      <h2 class="center teal-text">Login</h2>
       <div class="field">
         <label for="email">Email:</label>
         <input type="email" name="email" v-model="email">
@@ -12,7 +12,7 @@
       </div>
       <p class="red-text center" v-if="feedback">{{feedback}}</p>
       <div class="field">
-        <button class="btn deep-purple">Login</button>
+        <button class="btn teal">Login</button>
       </div>
     </form>
   </div>
@@ -39,6 +39,7 @@ export default {
           console.log(`===========>> USER LOGGED IN:`,cred.user)
         }).catch(err => {
           this.feedback = err.message
+          this.$router.push({name:'Signup'})
         })
         this.feedback = null
       }else{

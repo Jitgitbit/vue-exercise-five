@@ -1,7 +1,7 @@
 <template>
   <div class="signup container">
     <form @submit.prevent="signup" class="card-panel">
-      <h2 class="center deep-purple-text">Signup</h2>
+      <h2 class="center teal-text">Signup</h2>
       <div class="field">
         <label for="email">Email:</label>
         <input type="email" name="email" v-model="email">
@@ -16,7 +16,7 @@
       </div>
       <p class="red-text center" v-if="feedback">{{feedback}}</p>
       <div class="field center">
-        <button class="btn deep-purple">Signup</button>
+        <button class="btn teal">Signup</button>
       </div>
     </form>
   </div>
@@ -56,7 +56,6 @@ export default {
             .then(cred => {
               ref.set({
                 alias: this.alias,
-                geolocation: null,
                 user_id: cred.user.uid
               })
             }).then(() => {
