@@ -38,3 +38,5 @@ firebase init
 npm run build
 
 firebase deploy
+
+npm install slugify
