@@ -12,10 +12,10 @@ npm install firebase --save
 ____________________________________________________________________
 NOTE:
 for making sure all is well protecting the environments folder:
-add a line in .gitignore saying: environments/
-git rm -r --cached src/environments
+add a line in .gitignore saying: firebase/
+git rm -r --cached src/firebase
 git add .
-git commit -m 'Removed the now ignored directory "environments"'
+git commit -m 'Removed the now ignored directory "firebase"'
 git push origin master
 _____________________________________________________________________
 
